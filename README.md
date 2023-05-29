@@ -51,4 +51,4 @@ ou
 
 > npm install 
 
-> para rodar, no terminal : npm|yarn run start
+> para rodar, no terminal : npm | yarn run start
