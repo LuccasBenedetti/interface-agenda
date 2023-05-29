@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+## Teste 1 - Lógica
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Para o primeiro desafio proposto, comecei por calcular os horários de atendimento do cirurgião dentista:
 
-## Available Scripts
+**Horários de atendimento**
+- Segunda - 08h às 13h - Totalizando 5 horas - ou - 300 minutos
+- Quarta - 18h às 22h - Totalizando 4 horas - ou - 240 minutos
+- Sexta - 14h às 17h - Totalizando 3 horas - ou - 180 minutos
+- No total ele possui 12 horas para atendimento, ou 720 minutos.
 
-In the project directory, you can run:
+Depois, calculei o tempo necessário para atender todos os pacientes considerando os valores informados, a fim de descobrir se era possível encaixar todos:
 
-### `npm start`
+**Pacientes**
+| Nome | Tempo de Atendimento |
+|-------------------|---------------------|
+| Maria Clara | 80 min |
+| Pedro Henrique | 90 min |
+| Ana Luiza | 60 min |
+| Gabriel Oliveira | 70 min |
+| Laura Beatriz | 45 min |
+| João Miguel | 80 min |
+| Isabela Fernandes | 65 min |
+| Lucas Santos | 85 min |
+| Beatriz Almeida | 75 min |
+| Tempo total de atendimento | 10H 50M  \ 650 min |
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Segue um exemplo de como é possivel organizar todos os pacientes de maneira a sobrar alguma folga de tempo em todos os dias:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Agendamento**
+| Segunda | Quarta | Sexta |
+|-----------------------------|-----------------------------|--------------------------------|
+| Lucas Santos 08:00 às 09:25 | Maria Clara 18:00 às 19:20 | Laura Beatriz 14:00 às 14:45 |
+| Pedro Henrique 9:30 às 11:00  | Beatriz Almeida 19:20 às 20:35 | Isabela Fernandes 14:50 às 15:55 |
+| João Miguel 11:30 às 12:50 | Gabriel Oliveira 20:40 às 21:50 | Ana Luiza 16:00 às 17:00 |
+| Tempo Atentendo: 255 min | Tempo Atendendo: 225 min | Tempo Atendendo: 170 min |
 
-### `npm test`
+Para a montagem da tabela, levei em consideração colocar os horarios de atendimento mais extensos em dias com mais tempo disponível, e os atendimentos mais curtos em dias com menos tempo disponível.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Teste 2 - Interface Agenda Semanal
 
-### `npm run build`
+Instalação:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Clone esse repositório:
+> git clone link_do Projeto
+> cd nome_projeto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> yarn install (recomendado).
 
-### `npm run eject`
+ou
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+>npm install 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> para rodar, no terminal : npm|yarn run start
