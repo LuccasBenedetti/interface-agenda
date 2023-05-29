@@ -6,10 +6,10 @@ import AppointmentTable from "./table";
 const App = () => {
     return(
         <>
-                    <TopBar />
-                        <div className="container-lg my-5">
-                                <AppointmentTable/> 
-                        </div>
+            <TopBar />
+                <div className="container-lg my-5">
+                    <AppointmentTable/> 
+                </div>
         </>
     )
 };
